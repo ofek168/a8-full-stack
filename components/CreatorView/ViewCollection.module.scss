@@ -1,89 +1,109 @@
 #container {
-    background-color: #ffadad;
-    min-height: 100vh;
-  
-    > button {
-      margin: 50px 0 0 50px;
-      background-color: white;
-      border-radius: 5px;
-      padding: 10px 15px;
-      font-size: x-large;
-  
-      &:hover {
-        cursor: pointer;
-      }
+  background-color: #ffadad;
+  min-height: 100vh;
+
+  > button {
+    margin: 50px 0 0 50px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: x-large;
+
+    &:hover {
+      cursor: pointer;
     }
   }
-  
-  #list {
-    text-align: center;
-    padding: 50px 0;
-  
-    > li {
-      list-style-type: none;
-      max-width: 1000px;
-      margin: auto;
-    }
+}
+
+#list {
+  text-align: center;
+  padding: 50px 0;
+
+  > li {
+    list-style-type: none;
+    max-width: 1000px;
+    margin: auto;
   }
+}
+
+.collection {
+  display: flex;
+  margin-bottom: 40px;
+
+  > div:first-child {
+    background-color: #98eefe;
+    padding: 30px;
+    flex-basis: 35%;
+
+    > h2 {
+      font-size: 30px;
+    }
+
+    > a {
+      // &:first-of-type {
+      //   margin-right: 10px;
+      // }
+
+      > button {
+        background-color: #0198ff;
+        border-radius: 5px;
+        padding: 8px 10px;
+        color: white;
   
-  .collection {
-    display: flex;
-    margin-bottom: 40px;
-  
-    > div:first-child {
-      background-color: #98eefe;
-      padding: 30px;
-      flex-basis: 35%;
-  
-      > h2 {
-        font-size: 30px;
-      }
-  
-      > a {
-        // &:first-of-type {
-        //   margin-right: 10px;
-        // }
-  
-        > button {
-          background-color: #0198ff;
-          border-radius: 5px;
-          padding: 8px 10px;
-          color: white;
-    
-          &:hover {
-            cursor: pointer;
-          }
+        &:hover {
+          cursor: pointer;
         }
       }
     }
-  
-    > div:last-child {
-      background-color: #feb701;
-      padding: 15px;
-      flex-grow: 1;
-      display: flex;
-      overflow-x: scroll;
-    }
   }
-  
-  .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #c6ffc3;
+
+  > div:last-child {
+    background-color: #feb701;
     padding: 15px;
-  
-    &:not(&:last-of-type) {
-      margin-right: 10px;
-    }
-  
-    > h3 {
-      font-size: 24px;
-    }
-  
-    > h4 {
-      font-size: 20px;
-    }
+    flex-grow: 1;
+    display: flex;
+    overflow-x: scroll;
   }
-  
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #c6ffc3;
+  padding: 15px;
+
+  &:not(&:last-of-type) {
+    margin-right: 10px;
+  }
+
+  > h3 {
+    font-size: 24px;
+  }
+
+  > h4 {
+    font-size: 20px;
+  }
+}
+
+button.deleteTableButton {
+  background-color: white;
+  border-radius: 20%;
+  border-color: black;
+  border-width: 4px;
+  border-style: solid;
+  font-size: 0.9em;
+
+  width: fit-content;
+  height: fit-content;
+}
+
+div.tableNameContainer {
+font-size: 1.05em;
+display: flex;
+flex-direction:row;
+align-items:center;
+padding: 0.25vh 0 0.25vh 0;
+margin: 1vh 0 1vh 0;
+}
