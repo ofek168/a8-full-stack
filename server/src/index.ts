@@ -472,11 +472,24 @@ function collection_callbacks() {
     }
 
 
-      app.get("/instructorview", async (req, res) => {
-          res.send(coursesample)
-          res.send(coursesample2)
+    app.get("/instructorview", async (req, res) => {
+        res.send(coursesample)
+        res.send(coursesample2)
 
-      })
+    })
+
+    const collectionArray = [sample, sample2];
+
+    app.put("/submitCourse", async (req,res) =>{
+        console.log("The server has recieved a put request from the web client");
+        console.log(req.body);
+        res.send("boop!"); //just send something back to client
+    });
+
+    app.get("/getCollections", async (req,res) =>{
+        console.log("The server has recieved a get request from the web client");
+        res.send(collectionArray); //just send something back to client
+    })
 
     // [UPDATE] Existing Collection or Vocab_Item
     app.put("/update/:tableName/:uuid", async (req, res) => {
