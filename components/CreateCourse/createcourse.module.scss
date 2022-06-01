@@ -1,84 +1,105 @@
 .input{
-    border-radius: 5px;
+  border-radius: 5px;
 
-  }
+}
 
-  #inputs{
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    justify-content:space-between;
-    margin-top:5px;
-    margin-bottom:5px;
-  }
+#inputs{
+display: flex;
+flex-direction: row;
+font-size: 20px;
+justify-content:space-between;
+margin-top:5px;
+margin-bottom:5px;
+}
 
-  .button{
-    display: block;
-    width: 100%;
-    border: none;
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-  }
+.button{
+display: block;
+width: 100%;
+border: none;
+background-color: #04AA6D;
+color: white;
+padding: 14px 28px;
+font-size: 16px;
+cursor: pointer;
+text-align: center;
+}
 
-  .instructorCourse{
-    display:flex;
-    justify-content: center;
-  }
+.instructorCourse{
+display:flex;
+justify-content: center;
+}
 
-  .title{
-    font-size: 5rem;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #44CCFF;
+.title{
+font-size: 5rem;
+}
 
-    > label {
-      display: flex;
-      width:100px;
-      text-align: right;
-    }
-  }
-  
-  .courseInfoBox{
-    display: flex;
-    height: 100%;
-    width: 50%;
-    flex-direction: column;
-    justify-content: center;
-    background-color: red;
-    margin-right:3%;
-  }
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: #44CCFF;
+}
 
-  .courseTimeBox{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: center;
-    background-color: green;
+.container > label {
+display: flex;
+width:100px;
+text-align: right;
+}
 
-    margin-left: 3%;
-    margin-top: 20px;
+.courseInfoBox{
+display: flex;
+height: 100%;
+width: 50%;
+flex-direction: column;
+justify-content: center;
+background-color: red;
+margin-right:3%;
+}
 
-  }
+.courseTimeBox{
+display: flex;
+flex-direction: column;
+width: 50%;
+justify-content: center;
+background-color: green;
 
-  .courseBoxWrapper{
-    display: flex;
-    background-color: purple;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 80%;
-  }
+margin-left: 3%;
+margin-top: 20px;
 
-  .collectionsBox{
-    display: flex;
-    justify-content: center;
-  }
+}
+
+.courseBoxWrapper{
+display: flex;
+background-color: purple;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+width: 80%;
+}
+
+.collectionsBox{
+display: flex;
+justify-content: center;
+}
+
+div.modal {
+display: flex;
+flex-direction:column;
+z-index: 1;
+background-color: rgba(0, 0, 0, 0.25);
+width: 100vw;
+height: 100vh;
+position: absolute;
+left: 0%;
+top: 0%;
+}
+
+div.modal_content {
+background-color: white;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: fit-content;
+}
