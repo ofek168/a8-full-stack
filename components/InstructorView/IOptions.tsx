@@ -8,7 +8,7 @@ import { sample, sample2 } from '@components/Samples'
 import { ICollection, ICourse, IVocab } from 'interfaces'
 import { useRouter } from 'next/router'
 import { MouseEvent } from 'react'
-import ViewCollection from '@components/CreatorView/ViewCollection'
+import {ViewCollection} from '@components/CreatorView/ViewCollection'
 import InstructorCourse from './Icourses'
 import { coursesample, coursesample2 } from '../Samples/Icourseuser';
 
